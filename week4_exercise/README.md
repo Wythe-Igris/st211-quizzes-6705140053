@@ -1,6 +1,6 @@
 # Week 4 Class Exercises
 
-This folder contains the Week 4 class exercises for Automated Software Testing.
+This folder contains the Week 4 class exercises (14 September) from Lab-03 for Automated Software Testing.
 
 ## Files
 
