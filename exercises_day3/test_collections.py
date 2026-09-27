@@ -15,3 +15,5 @@ def test_dict_equality():
 
 def test_set_operations():
     assert {1, 2, 3} & {2, 3, 4} == {2, 3}
+    assert {1, 2, 3} | {2, 3, 4} == {1, 2, 3, 4}
+    assert {1, 2, 3} - {2, 3, 4} == {1}

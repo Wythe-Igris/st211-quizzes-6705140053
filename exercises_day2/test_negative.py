@@ -10,6 +10,8 @@ def test_email_without_at_rejected():
 def test_email_without_domain_rejected():
     with pytest.raises(ValueError):
         validate_email("user@")
+    with pytest.raises(ValueError):
+        validate_email("user@.com")
 
 
 def test_negative_age_rejected():

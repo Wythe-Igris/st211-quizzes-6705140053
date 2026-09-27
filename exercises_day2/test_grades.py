@@ -12,9 +12,6 @@ def test_boundary_pass_fail():
 def test_minimum_valid():
     assert letter_grade(0) == "F"
 
-def test_minimum_valid():
-    assert letter_grade(0) == "F"
-
 def test_maximum_valid():
     assert letter_grade(100) == "A"
 
