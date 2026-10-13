@@ -1,4 +1,4 @@
-# Exercises day 2: Effective test cases
+# Exercises lab 2: Effective test cases
 
 Bank-account AAA, an everything-at-once example, dependent/independent tests, descriptive test names, grade boundaries, and positive/negative validation.
 

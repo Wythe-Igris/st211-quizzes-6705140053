@@ -1,4 +1,4 @@
-# Exercises day 4: Fixtures
+# Exercises lab 4: Fixtures
 
 A fixture provides a fresh BankAccount with balance 100 for each deposit/withdrawal test.
 

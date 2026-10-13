@@ -1,4 +1,4 @@
-# Exercises day 1: Testing fundamentals
+# Exercises lab 1: Testing fundamentals
 
 Basic assertions, calculator tests, Arrange–Act–Assert, print output, and exception checks.
 

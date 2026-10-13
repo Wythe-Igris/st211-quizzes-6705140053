@@ -1,6 +1,6 @@
-# Exercises day 3: Assertions and organization
+# Exercises lab 3: Assertions and organization
 
-Collection and float assertions, shopping-cart test classes, markers, skips, expected failures, and pytest configuration. Combines the earlier Week 4 and Week 5 Lab 03 work; validation exercises now live in day 2.
+Collection and float assertions, shopping-cart test classes, markers, skips, expected failures, and pytest configuration. Combines the earlier Week 4 and Week 5 Lab 03 work; validation exercises now live in lab 2.
 
 Run from this folder:
 
