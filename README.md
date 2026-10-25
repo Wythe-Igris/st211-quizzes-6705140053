@@ -11,7 +11,7 @@ This repository contains my classroom exercises and Roman numeral assignment for
 
 ## Exercises
 
-The `exercises_lab1`–`exercises_lab5` folders follow Lab 01–05. Each folder corresponds to a lab; one lab may span more than one classroom session.
+The `exercises_lab1`–`exercises_lab6` folders follow Lab 01–06. Each folder corresponds to a lab; one lab may span more than one classroom session.
 
 | Folder | Lab / exercise | What it covers |
 |---|---|---|
@@ -19,7 +19,8 @@ The `exercises_lab1`–`exercises_lab5` folders follow Lab 01–05. Each folder 
 | [exercises_lab2](exercises_lab2/) | Lab 02: Effective test cases | Bank-account tests, shared state versus independent tests, descriptive names, grade boundaries, and positive/negative email and age validation |
 | [exercises_lab3](exercises_lab3/) | Lab 03: Assertions and organization | Collection and floating-point assertions, shopping-cart test classes, custom markers, skipping, expected failures, and `pytest.ini` |
 | [exercises_lab4](exercises_lab4/) | Lab 04: Fixtures | A fresh bank-account fixture for deposit and withdrawal tests |
-| [exercises_lab5](exercises_lab5/) | Lab 05: Parameterized testing | Selected class examples: input lists, tuples, stacked parameters, IDs, and per-case xfail |
+| [exercises_lab5](exercises_lab5/) | Lab 05: Parameterized testing | Input lists, tuples, stacked parameters, IDs, per-case xfail, parameterized fixtures, and JSON/CSV test data |
+| [exercises_lab6](exercises_lab6/) | Lab 06: Mocking | Controlled weather tests with patch, monkeypatch, and temperature boundaries |
 | [roman_conversion](roman_conversion/) | Roman numeral assignment | Uppercase Roman numerals from 1–3999, with tests for conversion rules, boundaries, and invalid inputs |
 
 Each folder has a short README with its purpose and run instructions.
@@ -80,6 +81,11 @@ cd ..
 # Lab 5: selected parameterization exercises
 cd exercises_lab5
 python -m pytest -v -s
+cd ..
+
+# Lab 6: mocking
+cd exercises_lab6
+python -m pytest -v
 cd ..
 
 # Roman numeral conversion
