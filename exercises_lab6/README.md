@@ -1,19 +1,26 @@
 # Lab 06: Mocking and Test Doubles
 
-Lecture exercises covered through page 24 (`payment.py`).
+Practice with mocking, dependency injection, return values, patching, and call verification.
 
-| File | Purpose | Lecture page |
-|---|---|---|
-| `weather.py` | Random temperature and weather classification | 12 |
-| `test_problem.py` | Deliberately weak test: only checks the allowed description words | 13 |
-| `test_solution_preview.py` | Controls temperatures with `patch` for precise hot/freezing checks | 15–16 |
-| `test_mock_basics.py` | Configured return values, arbitrary calls, and stored attributes | 19–23 |
-| `payment.py` | PaymentGateway and OrderProcessor with an injected dependency and amount validation | 24 |
-| `test_weather.py` | Additional existing monkeypatch checks for the random range and eight temperature cases | Earlier practice |
+| File | Purpose |
+|---|---|
+| `weather.py` | Random temperature and weather classification |
+| `test_problem.py` | Deliberately weak test: only checks the allowed description words |
+| `test_solution_preview.py` | Controls temperatures with `patch` for precise hot/freezing checks |
+| `test_mock_basics.py` | Configured return values, arbitrary calls, and stored attributes |
+| `payment.py` | PaymentGateway and OrderProcessor with an injected dependency and amount validation |
+| `test_payment.py` | Inject a mock payment gateway |
+| `test_user_service.py` | `return_value` example |
+| `test_return_values.py` | Sequence of return values with `side_effect` |
+| `notifications.py` | Email notification example for patching |
+| `test_notifications.py` | Patch the email function |
+| `date_utils.py` | Report name using the year |
+| `test_date_utils.py` | Patch decorator example |
+| `test_weather_decorator.py` | Weather patch decorator examples |
+| `test_verify_calls.py` | Verify mock calls |
+| `test_weather.py` | Additional existing monkeypatch checks for the random range and eight temperature cases |
 
-The two patch tests previously in `test_problem.py` are preserved in
-`test_solution_preview.py`, matching the lecture filenames. The weak test is
-intentionally kept for comparison: passing it does not prove the weather boundaries.
+`test_problem.py` shows a weak test. `test_solution_preview.py` uses mocking to test specific temperatures.
 
 From this folder, using the existing repository environment:
 
@@ -21,10 +28,7 @@ From this folder, using the existing repository environment:
 ../.venv/bin/python -m pytest -v
 ```
 
-Expected result: **15 passed**. The payment test on page 27 is beyond the current
-page-24 stopping point.
-
-For the Step 1 checkpoint (p. 16), run these separately and keep their output:
+To compare the weak test with controlled tests, run:
 
 ```bash
 ../.venv/bin/python -m pytest test_problem.py -v
